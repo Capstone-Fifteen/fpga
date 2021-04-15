@@ -1,0 +1,181 @@
+xilinx rtfpga
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/user/Desktop/CG4002/vivado/vivado.srcs/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/user/Desktop/CG4002/vivado/vivado.srcs/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+INFO: [Synth 8-3936] Found unconnected internal register 'ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.EXP/EXP_OFF.LRG_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg' and it is trimmed from '9' to '8' bits. [/home/user/Desktop/CG4002/vivado/vivado.srcs/sources_1/bd/design_1/ipshared/7468/hdl/xbip_pipe_v3_0_vh_rfs.vhd:368]
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[26] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[25] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[24] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[23] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[22] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[21] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[20] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[19] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[18] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[17] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[16] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[15] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[14] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[13] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[12] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[11] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[10] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[9] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[8] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[7] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[6] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[5] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[4] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[3] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[2] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[1] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[0] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tuser[0] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tlast in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tvalid in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[7] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[6] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[5] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[4] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[3] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[2] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[1] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[0] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tuser[0] in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tlast in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axis_result_tready in module floating_point_v7_1_10_viv__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module MLP_1_fmul_32ns_3cud is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aresetn in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tuser[0] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_a_tlast in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tuser[0] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_b_tlast in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tvalid in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[31] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[30] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[29] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[28] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[27] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[26] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[25] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[24] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[23] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[22] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[21] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[20] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[19] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[18] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[17] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[16] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[15] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[14] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[13] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[12] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[11] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[10] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[9] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[8] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[7] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[6] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[5] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[4] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[3] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[2] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[1] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tdata[0] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tuser[0] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_c_tlast in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tvalid in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[7] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[6] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[5] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[4] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[3] in module floating_point_v7_1_10_viv is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axis_operation_tdata[2] in module floating_point_v7_1_10_viv is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5779] Default cascade height of 8 will be used for BRAM '"hidden1_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "hidden1_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "hidden1_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "hidden1_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "hidden1_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hidden1_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hidden1_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "hidden1_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 1 for RAM "hidden1_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 8 will be used for BRAM '"hidden2_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "hidden2_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "hidden2_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "hidden2_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "hidden2_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hidden2_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 9 for RAM "hidden2_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 4 for RAM "hidden2_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 1 for RAM "hidden2_matrix_U/MLP_1_hidden1_matdEe_ram_U/ram_reg"
+INFO: [Synth 8-5779] Default cascade height of 8 will be used for BRAM '"outputs_matrix_U/MLP_1_outputs_matfYi_ram_U/ram_reg"'.
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 8 and width 18 for RAM "outputs_matrix_U/MLP_1_outputs_matfYi_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 4 and width 9 for RAM "outputs_matrix_U/MLP_1_outputs_matfYi_ram_U/ram_reg"
+INFO: [Synth 8-5555] Implemented Block Ram Cascade chain of height 2 and width 4 for RAM "outputs_matrix_U/MLP_1_outputs_matfYi_ram_U/ram_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 1 for RAM "outputs_matrix_U/MLP_1_outputs_matfYi_ram_U/ram_reg"
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln100_reg_2577_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln100_reg_2577_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln100_reg_2577_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln100_reg_2577_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln100_reg_2577_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln100_reg_2577_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln100_reg_2577_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln100_reg_2577_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_dot_product_fu_1271/MLP_1_fmul_32ns_3cud_U14/ce_r_reg)
+INFO: [Synth 8-3886] merging instance 'hidden2_addr_3_reg_2849_reg[0]' (FDE) to 'zext_ln186_reg_2843_reg[0]'
+INFO: [Synth 8-3886] merging instance 'hidden2_addr_3_reg_2849_reg[1]' (FDE) to 'zext_ln186_reg_2843_reg[1]'
+INFO: [Synth 8-3886] merging instance 'hidden2_addr_3_reg_2849_reg[2]' (FDE) to 'zext_ln186_reg_2843_reg[2]'
+INFO: [Synth 8-3886] merging instance 'hidden2_addr_3_reg_2849_reg[3]' (FDE) to 'zext_ln186_reg_2843_reg[3]'
+INFO: [Synth 8-3886] merging instance 'hidden2_addr_3_reg_2849_reg[4]' (FDE) to 'zext_ln186_reg_2843_reg[4]'
+INFO: [Synth 8-3886] merging instance 'hidden2_addr_3_reg_2849_reg[5]' (FDE) to 'zext_ln186_reg_2843_reg[5]'
+INFO: [Synth 8-3886] merging instance 'hidden2_addr_3_reg_2849_reg[6]' (FDE) to 'zext_ln186_reg_2843_reg[6]'
+INFO: [Synth 8-3886] merging instance 'hidden2_addr_3_reg_2849_reg[7]' (FDE) to 'zext_ln186_reg_2843_reg[7]'
+INFO: [Synth 8-3886] merging instance 'zext_ln173_reg_2748_reg[0]' (FDE) to 'hidden1_addr_3_reg_2754_reg[0]'
+INFO: [Synth 8-3886] merging instance 'zext_ln173_reg_2748_reg[1]' (FDE) to 'hidden1_addr_3_reg_2754_reg[1]'
+INFO: [Synth 8-3886] merging instance 'zext_ln173_reg_2748_reg[2]' (FDE) to 'hidden1_addr_3_reg_2754_reg[2]'
+INFO: [Synth 8-3886] merging instance 'zext_ln173_reg_2748_reg[3]' (FDE) to 'hidden1_addr_3_reg_2754_reg[3]'
+INFO: [Synth 8-3886] merging instance 'zext_ln173_reg_2748_reg[4]' (FDE) to 'hidden1_addr_3_reg_2754_reg[4]'
+INFO: [Synth 8-3886] merging instance 'zext_ln173_reg_2748_reg[5]' (FDE) to 'hidden1_addr_3_reg_2754_reg[5]'
+INFO: [Synth 8-3886] merging instance 'zext_ln173_reg_2748_reg[6]' (FDE) to 'hidden1_addr_3_reg_2754_reg[6]'
+INFO: [Synth 8-3886] merging instance 'zext_ln173_reg_2748_reg[7]' (FDE) to 'hidden1_addr_3_reg_2754_reg[7]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (MLP_1_fmul_32ns_3cud_U20/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (grp_dot_product_fu_1271/MLP_1_fadd_32ns_3bkb_U13/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (MLP_1_faddfsub_32g8j_U18/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln94_reg_2556_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln94_reg_2556_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln94_reg_2556_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln94_reg_2556_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln94_reg_2556_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln94_reg_2556_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln94_reg_2556_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln94_reg_2556_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln88_reg_2535_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln88_reg_2535_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln88_reg_2535_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln88_reg_2535_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln88_reg_2535_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln88_reg_2535_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln88_reg_2535_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\zext_ln88_reg_2535_reg[7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (MLP_1_fadd_32ns_3bkb_U19/ce_r_reg)
+INFO: [Synth 8-3886] merging instance 'hidden2_matrix_U/i_68_0/MLP_1_hidden1_matdEe_ram_U/ram_reg_mux_sel_reg_1' (FDE) to 'hidden2_matrix_U/i_68_0/MLP_1_hidden1_matdEe_ram_U/ram_reg_mux_sel_reg_34'
+INFO: [Synth 8-3886] merging instance 'hidden1_matrix_U/i_68_0/MLP_1_hidden1_matdEe_ram_U/ram_reg_mux_sel_reg_1' (FDE) to 'hidden1_matrix_U/i_68_0/MLP_1_hidden1_matdEe_ram_U/ram_reg_mux_sel_reg_34'
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_10_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_10_viv__3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_10_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_10_viv__parameterized3.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_10_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_10_viv.

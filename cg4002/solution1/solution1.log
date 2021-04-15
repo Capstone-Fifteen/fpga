@@ -1,0 +1,1247 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 704 ; free virtual = 7841
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 704 ; free virtual = 7841
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:24 ; elapsed = 00:01:25 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 673 ; free virtual = 7809
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:114) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:129) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:02:10 ; elapsed = 00:02:10 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 619 ; free virtual = 7786
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product.1' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product.2' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product' completely with a factor of 256.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:114) automatically.
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'a' in function 'dot_product.1' (cg4002/solution1/main.cpp:32:2).
+WARNING: [ANALYSIS 214-31] The program may have out of bound access of array variable 'b' in function 'dot_product.1' (cg4002/solution1/main.cpp:36:2).
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:03:01 ; elapsed = 00:03:01 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 579 ; free virtual = 7718
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:56:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:57:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:58:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:59:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:60:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:61:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:62:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:63:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:64:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:65:35)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:76:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:82:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:93:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:97:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:101:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:107:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:114:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:121:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:127:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:04:01 ; elapsed = 00:04:01 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 429 ; free virtual = 7591
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP_1' ...
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.2' to 'dot_product_2'.
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 784 ; free virtual = 7537
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 784 ; free virtual = 7537
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 706 ; free virtual = 7459
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:121) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:138) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 709 ; free virtual = 7434
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'dot_product.1' (cg4002/solution1/main.cpp:25:21).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1' (cg4002/solution1/main.cpp:30) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-2' (cg4002/solution1/main.cpp:34) because its parent loop or function is pipelined.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'dot_product' (cg4002/solution1/main.cpp:23).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1' (cg4002/solution1/main.cpp:30) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-2' (cg4002/solution1/main.cpp:34) because its parent loop or function is pipelined.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cg4002/solution1/main.cpp:30) in function 'dot_product.1' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (cg4002/solution1/main.cpp:34) in function 'dot_product.1' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product.1' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (cg4002/solution1/main.cpp:30) in function 'dot_product' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-2' (cg4002/solution1/main.cpp:34) in function 'dot_product' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product' completely with a factor of 256.
+WARNING: [XFORM 203-104] Completely partitioning array 'hidden1_bias' (cg4002/solution1/main.cpp:60) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:60:30), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'hidden1_bias' (cg4002/solution1/main.cpp:60) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'hidden2_bias' (cg4002/solution1/main.cpp:61) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:61:30), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'hidden2_bias' (cg4002/solution1/main.cpp:61) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'outputs_bias' (cg4002/solution1/main.cpp:62) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:62:30), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'outputs_bias' (cg4002/solution1/main.cpp:62) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'hidden1_matrix' (cg4002/solution1/main.cpp:63) accessed through non-constant indices on dimension 2 (cg4002/solution1/main.cpp:82:4), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'hidden1_matrix' (cg4002/solution1/main.cpp:63) in dimension 2 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'hidden2_matrix' (cg4002/solution1/main.cpp:64) accessed through non-constant indices on dimension 2 (cg4002/solution1/main.cpp:88:4), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'hidden2_matrix' (cg4002/solution1/main.cpp:64) in dimension 2 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'outputs_matrix' (cg4002/solution1/main.cpp:65) accessed through non-constant indices on dimension 2 (cg4002/solution1/main.cpp:94:4), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'outputs_matrix' (cg4002/solution1/main.cpp:65) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:121) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:01:25 ; elapsed = 00:01:26 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 583 ; free virtual = 7314
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:56:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:57:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:58:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:59:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:113:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:121:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:129:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:136:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix[0]' (cg4002/solution1/main.cpp:82:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix[0]' (cg4002/solution1/main.cpp:63:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix[0]' (cg4002/solution1/main.cpp:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix[0]' (cg4002/solution1/main.cpp:64:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix[0]' (cg4002/solution1/main.cpp:94:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix[0]' (cg4002/solution1/main.cpp:65:37)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:16:01 ; elapsed = 00:16:02 . Memory (MB): peak = 2072.977 ; gain = 1668.617 ; free physical = 176 ; free virtual = 5407
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 3847 ; free virtual = 5493
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 3847 ; free virtual = 5493
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:47 ; elapsed = 00:02:48 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 5227 ; free virtual = 6880
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:116) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:136) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:04:53 ; elapsed = 00:04:53 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 5188 ; free virtual = 6842
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product.1' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product' completely with a factor of 256.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:116) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:07:03 ; elapsed = 00:07:03 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 5182 ; free virtual = 6842
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:56:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:57:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:58:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:59:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:60:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:61:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:62:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:63:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:64:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:65:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:76:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:82:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:93:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:97:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:101:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:107:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:112:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:116:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:121:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:125:16)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:130:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:133:3)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:07:10 ; elapsed = 00:07:11 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 5113 ; free virtual = 6774
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP_1' ...
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 436.73 seconds; current allocated memory: 262.316 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 8.22 seconds; current allocated memory: 281.227 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 5173 ; free virtual = 9763
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 5173 ; free virtual = 9763
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:31 ; elapsed = 00:02:34 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 7910 ; free virtual = 12565
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:138) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:04:14 ; elapsed = 00:04:17 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 7660 ; free virtual = 12523
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 64>' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 256>.1' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 256>' completely with a factor of 256.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:05:54 ; elapsed = 00:05:56 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 7641 ; free virtual = 12518
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 64>' to 'dot_product' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 256>.1' to 'dot_product.1' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 256>' to 'dot_product.2' (cg4002/solution1/main.cpp:30:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:56:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:57:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:58:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:59:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:60:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:61:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:62:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:63:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:64:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:76:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:82:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:93:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:97:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:101:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:109:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:114:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:118:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:123:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:127:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:132:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:135:4)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:06:01 ; elapsed = 00:06:03 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 7555 ; free virtual = 12430
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP_1' ...
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.2' to 'dot_product_2'.
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1520.117 ; gain = 1067.191 ; free physical = 7945 ; free virtual = 13210
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 1520.117 ; gain = 1067.191 ; free physical = 7945 ; free virtual = 13210
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:05:53 ; elapsed = 00:05:53 . Memory (MB): peak = 1520.117 ; gain = 1067.191 ; free physical = 7664 ; free virtual = 12915
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:138) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:11:38 ; elapsed = 00:11:39 . Memory (MB): peak = 1520.117 ; gain = 1067.191 ; free physical = 7550 ; free virtual = 12792
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 64>' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 512>' completely with a factor of 512.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 1024>' completely with a factor of 1024.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:18:12 ; elapsed = 00:18:13 . Memory (MB): peak = 1564.957 ; gain = 1112.031 ; free physical = 7077 ; free virtual = 12337
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 64>' to 'dot_product' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 512>' to 'dot_product.1' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 1024>' to 'dot_product.2' (cg4002/solution1/main.cpp:30:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:56:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:57:26)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:58:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:59:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:60:31)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:61:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:62:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:63:39)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:64:38)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:76:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:82:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:93:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:97:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:101:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:109:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:114:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:118:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:123:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:127:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:132:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:135:4)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:20:58 ; elapsed = 00:20:59 . Memory (MB): peak = 1564.957 ; gain = 1112.031 ; free physical = 7027 ; free virtual = 12316
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP_1' ...
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.2' to 'dot_product_2'.
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1391.77 seconds; current allocated memory: 446.987 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 172.91 seconds; current allocated memory: 545.814 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 88.6 seconds; current allocated memory: 568.122 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 34.55 seconds; current allocated memory: 638.599 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 21.64 seconds; current allocated memory: 643.059 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.6 seconds; current allocated memory: 658.850 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.39 seconds; current allocated memory: 659.995 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.97 seconds; current allocated memory: 661.316 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fadd_32ns_32ns_32_4_full_dsp_1' to 'MLP_1_fadd_32ns_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fmul_32ns_32ns_32_3_max_dsp_1' to 'MLP_1_fmul_32ns_3cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_2'.
+INFO: [HLS 200-111]  Elapsed time: 21.38 seconds; current allocated memory: 865.018 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_1'.
+INFO: [HLS 200-111]  Elapsed time: 73.6 seconds; current allocated memory: 1.051 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product'.
+INFO: [HLS 200-111]  Elapsed time: 22.5 seconds; current allocated memory: 1.125 GB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/M_AXIS_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/M_AXIS_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'MLP_1' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'MLP_1_hidden1_matrix' to 'MLP_1_hidden1_matdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_hidden2_matrix' to 'MLP_1_hidden2_mateOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_outputs_matrix' to 'MLP_1_outputs_matfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fcmp_32ns_32ns_1_2_1' to 'MLP_1_fcmp_32ns_3g8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fcmp_32ns_3g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MLP_1'.
+INFO: [HLS 200-111]  Elapsed time: 1.93 seconds; current allocated memory: 1.136 GB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 103.93 MHz
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_inputs_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden2_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_outputs_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden1_matdEe_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden2_mateOg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_outputs_matfYi_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:30:28 ; elapsed = 00:30:37 . Memory (MB): peak = 2219.492 ; gain = 1766.566 ; free physical = 5606 ; free virtual = 11364
+INFO: [VHDL 208-304] Generating VHDL RTL for MLP_1.
+INFO: [VLOG 209-307] Generating Verilog RTL for MLP_1.
+INFO: [HLS 200-112] Total elapsed time: 1837.54 seconds; peak allocated memory: 1.136 GB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 6842 ; free virtual = 12263
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 6842 ; free virtual = 12263
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:04:43 ; elapsed = 00:04:43 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 6752 ; free virtual = 12163
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:138) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:08:52 ; elapsed = 00:08:53 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 6661 ; free virtual = 12074
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 64>' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 256>' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 512>' completely with a factor of 512.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:13:08 ; elapsed = 00:13:08 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 6592 ; free virtual = 12007
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 64>' to 'dot_product' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 512>' to 'dot_product.1' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 256>' to 'dot_product.2' (cg4002/solution1/main.cpp:30:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:56:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:57:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:58:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:59:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:60:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:61:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:62:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:63:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:64:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:76:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:82:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:93:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:97:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:101:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:109:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:114:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:118:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:123:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:127:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:132:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:135:4)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:13:28 ; elapsed = 00:13:29 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 6556 ; free virtual = 11974
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP_1' ...
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'.
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.2' to 'dot_product_2'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 830.15 seconds; current allocated memory: 358.884 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 29.69 seconds; current allocated memory: 429.440 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 17.81 seconds; current allocated memory: 440.632 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 8.5 seconds; current allocated memory: 459.463 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 5.77 seconds; current allocated memory: 464.278 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.1 seconds; current allocated memory: 480.065 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.82 seconds; current allocated memory: 481.209 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.57 seconds; current allocated memory: 482.517 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fadd_32ns_32ns_32_4_full_dsp_1' to 'MLP_1_fadd_32ns_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fmul_32ns_32ns_32_3_max_dsp_1' to 'MLP_1_fmul_32ns_3cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_1'.
+INFO: [HLS 200-111]  Elapsed time: 4.86 seconds; current allocated memory: 549.061 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_2'.
+INFO: [HLS 200-111]  Elapsed time: 18.74 seconds; current allocated memory: 641.807 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product'.
+INFO: [HLS 200-111]  Elapsed time: 6.23 seconds; current allocated memory: 682.269 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/M_AXIS_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/M_AXIS_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'MLP_1' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'MLP_1_hidden1_matrix' to 'MLP_1_hidden1_matdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_hidden2_matrix' to 'MLP_1_hidden2_mateOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_outputs_matrix' to 'MLP_1_outputs_matfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fcmp_32ns_32ns_1_2_1' to 'MLP_1_fcmp_32ns_3g8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fcmp_32ns_3g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MLP_1'.
+INFO: [HLS 200-111]  Elapsed time: 1.06 seconds; current allocated memory: 693.859 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 103.93 MHz
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_inputs_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden2_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_outputs_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden1_matdEe_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden2_mateOg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_outputs_matfYi_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:15:23 ; elapsed = 00:15:28 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 6233 ; free virtual = 11789
+INFO: [VHDL 208-304] Generating VHDL RTL for MLP_1.
+INFO: [VLOG 209-307] Generating Verilog RTL for MLP_1.
+INFO: [HLS 200-112] Total elapsed time: 927.86 seconds; peak allocated memory: 693.859 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 6941 ; free virtual = 12360
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 6941 ; free virtual = 12360
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:57 ; elapsed = 00:02:59 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 6820 ; free virtual = 12277
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:138) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:05:16 ; elapsed = 00:05:19 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 6770 ; free virtual = 12229
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 64>' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 128>' completely with a factor of 128.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 512>' completely with a factor of 512.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:07:47 ; elapsed = 00:07:49 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 6760 ; free virtual = 12223
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 64>' to 'dot_product' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 512>' to 'dot_product.1' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 128>' to 'dot_product.2' (cg4002/solution1/main.cpp:30:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:56:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:57:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:58:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:59:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:60:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:61:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:62:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:63:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:64:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:76:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:82:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:93:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:97:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:101:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:109:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:114:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:118:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:123:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:127:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:132:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:135:4)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:08:07 ; elapsed = 00:08:09 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 6744 ; free virtual = 12207
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP_1' ...
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'.
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.2' to 'dot_product_2'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 509.84 seconds; current allocated memory: 289.715 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 31.26 seconds; current allocated memory: 360.292 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.15 seconds; current allocated memory: 376.801 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.44 seconds; current allocated memory: 386.969 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.58 seconds; current allocated memory: 390.583 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 406.370 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.75 seconds; current allocated memory: 407.516 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.5 seconds; current allocated memory: 408.827 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fadd_32ns_32ns_32_4_full_dsp_1' to 'MLP_1_fadd_32ns_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fmul_32ns_32ns_32_3_max_dsp_1' to 'MLP_1_fmul_32ns_3cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_1'.
+INFO: [HLS 200-111]  Elapsed time: 4.83 seconds; current allocated memory: 475.369 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_2'.
+INFO: [HLS 200-111]  Elapsed time: 16.16 seconds; current allocated memory: 556.743 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product'.
+INFO: [HLS 200-111]  Elapsed time: 2.33 seconds; current allocated memory: 579.314 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/M_AXIS_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/M_AXIS_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'MLP_1' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'MLP_1_hidden1_matrix' to 'MLP_1_hidden1_matdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_hidden2_matrix' to 'MLP_1_hidden2_mateOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_outputs_matrix' to 'MLP_1_outputs_matfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fcmp_32ns_32ns_1_2_1' to 'MLP_1_fcmp_32ns_3g8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fcmp_32ns_3g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MLP_1'.
+INFO: [HLS 200-111]  Elapsed time: 1.05 seconds; current allocated memory: 590.904 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 103.93 MHz
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_inputs_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden1_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden2_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_outputs_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden1_matdEe_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden2_mateOg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_outputs_matfYi_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:09:44 ; elapsed = 00:09:50 . Memory (MB): peak = 1520.117 ; gain = 1099.754 ; free physical = 6261 ; free virtual = 11859
+INFO: [VHDL 208-304] Generating VHDL RTL for MLP_1.
+INFO: [VLOG 209-307] Generating Verilog RTL for MLP_1.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 4487 ; free virtual = 9033
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 4487 ; free virtual = 9033
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:01:27 ; elapsed = 00:01:28 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 4448 ; free virtual = 9003
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:138) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:02:19 ; elapsed = 00:02:19 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 4421 ; free virtual = 8977
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 64>' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 128>' completely with a factor of 128.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 512>' completely with a factor of 512.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:03:20 ; elapsed = 00:03:21 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 4380 ; free virtual = 8994
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 64>' to 'dot_product' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 512>' to 'dot_product.1' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 128>' to 'dot_product.2' (cg4002/solution1/main.cpp:30:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:56:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:57:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:58:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:59:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:60:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:61:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:62:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:63:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:64:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:76:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:82:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:93:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:97:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:101:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:109:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:114:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:118:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:123:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:127:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:132:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:135:4)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:03:39 ; elapsed = 00:03:40 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 4373 ; free virtual = 8987
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP_1' ...
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'.
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.2' to 'dot_product_2'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 240.98 seconds; current allocated memory: 277.566 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 31.48 seconds; current allocated memory: 348.137 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 15.08 seconds; current allocated memory: 364.653 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 2.47 seconds; current allocated memory: 374.827 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 2.54 seconds; current allocated memory: 378.440 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.86 seconds; current allocated memory: 394.225 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.73 seconds; current allocated memory: 395.373 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.49 seconds; current allocated memory: 396.680 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fadd_32ns_32ns_32_4_full_dsp_1' to 'MLP_1_fadd_32ns_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fmul_32ns_32ns_32_3_max_dsp_1' to 'MLP_1_fmul_32ns_3cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_1'.
+INFO: [HLS 200-111]  Elapsed time: 4.78 seconds; current allocated memory: 463.217 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_2'.
+INFO: [HLS 200-111]  Elapsed time: 15.73 seconds; current allocated memory: 544.594 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product'.
+INFO: [HLS 200-111]  Elapsed time: 2.31 seconds; current allocated memory: 567.231 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/M_AXIS_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/M_AXIS_V_last' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'MLP_1' to 'ap_ctrl_none'.
+INFO: [SYN 201-210] Renamed object name 'MLP_1_hidden1_matrix' to 'MLP_1_hidden1_matdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_hidden2_matrix' to 'MLP_1_hidden2_mateOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_outputs_matrix' to 'MLP_1_outputs_matfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fcmp_32ns_32ns_1_2_1' to 'MLP_1_fcmp_32ns_3g8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fcmp_32ns_3g8j': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'MLP_1'.
+INFO: [HLS 200-111]  Elapsed time: 1.03 seconds; current allocated memory: 578.794 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 103.93 MHz
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_inputs_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden1_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_outputs_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden1_matdEe_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_hidden2_mateOg_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'MLP_1_outputs_matfYi_ram (RAM)' using block RAMs.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:05:16 ; elapsed = 00:05:20 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 3860 ; free virtual = 8631
+INFO: [VHDL 208-304] Generating VHDL RTL for MLP_1.
+INFO: [VLOG 209-307] Generating Verilog RTL for MLP_1.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7257 ; free virtual = 9135
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7257 ; free virtual = 9135
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:11 ; elapsed = 00:02:12 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7196 ; free virtual = 9080
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:138) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:03:47 ; elapsed = 00:03:48 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7117 ; free virtual = 9035
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 64>' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 256>.1' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 256>' completely with a factor of 256.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:118) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:05:26 ; elapsed = 00:05:28 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 6637 ; free virtual = 8892
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 64>' to 'dot_product' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 256>.1' to 'dot_product.1' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 256>' to 'dot_product.2' (cg4002/solution1/main.cpp:30:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:56:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:57:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:58:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:59:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:60:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:61:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:62:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:63:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:64:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:65:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:76:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:82:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:88:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:93:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:97:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:101:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:109:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:114:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:118:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:123:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:127:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:132:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:135:4)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:05:34 ; elapsed = 00:05:35 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 6554 ; free virtual = 8812
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP_1' ...
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.2' to 'dot_product_2'.
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu3eg-sbva484-1-i'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'cg4002/solution1/main.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7674 ; free virtual = 10187
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7674 ; free virtual = 10187
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:02:15 ; elapsed = 00:02:16 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7580 ; free virtual = 10110
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:169) automatically.
+INFO: [XFORM 203-602] Inlining function 'batch_normalization' into 'MLP_1' (cg4002/solution1/main.cpp:173) automatically.
+INFO: [XFORM 203-602] Inlining function 'softmax' into 'MLP_1' (cg4002/solution1/main.cpp:197) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:03:55 ; elapsed = 00:03:57 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7522 ; free virtual = 10060
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 64>' completely with a factor of 64.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 256>.1' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'Loop-3' (cg4002/solution1/main.cpp:39) in function 'dot_product<float, 256>' completely with a factor of 256.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'a_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+INFO: [XFORM 203-101] Partitioning array 'b_int' (cg4002/solution1/main.cpp:25) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'relu' into 'MLP_1' (cg4002/solution1/main.cpp:169) automatically.
+INFO: [XFORM 203-602] Inlining function 'batch_normalization' into 'MLP_1' (cg4002/solution1/main.cpp:173) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:05:35 ; elapsed = 00:05:37 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7510 ; free virtual = 10047
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 64>' to 'dot_product' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 256>.1' to 'dot_product.1' (cg4002/solution1/main.cpp:30:2)
+WARNING: [XFORM 203-631] Renaming function 'dot_product<float, 256>' to 'dot_product.2' (cg4002/solution1/main.cpp:30:2)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:60:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:61:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:62:25)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:63:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:64:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:65:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:66:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:67:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:68:37)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:69:36)
+INFO: [HLS 200-472] Inferring partial write operation for 'moving_mean1' (cg4002/solution1/main.cpp:70:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'moving_var1' (cg4002/solution1/main.cpp:71:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'gamma1' (cg4002/solution1/main.cpp:72:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'beta1' (cg4002/solution1/main.cpp:73:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'moving_mean2' (cg4002/solution1/main.cpp:75:30)
+INFO: [HLS 200-472] Inferring partial write operation for 'moving_var2' (cg4002/solution1/main.cpp:76:29)
+INFO: [HLS 200-472] Inferring partial write operation for 'gamma2' (cg4002/solution1/main.cpp:77:24)
+INFO: [HLS 200-472] Inferring partial write operation for 'beta2' (cg4002/solution1/main.cpp:78:23)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_matrix' (cg4002/solution1/main.cpp:90:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_matrix' (cg4002/solution1/main.cpp:96:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_matrix' (cg4002/solution1/main.cpp:102:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1_bias' (cg4002/solution1/main.cpp:107:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2_bias' (cg4002/solution1/main.cpp:111:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs_bias' (cg4002/solution1/main.cpp:115:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'moving_mean1' (cg4002/solution1/main.cpp:119:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'moving_var1' (cg4002/solution1/main.cpp:123:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'beta1' (cg4002/solution1/main.cpp:127:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'gamma1' (cg4002/solution1/main.cpp:131:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'moving_mean2' (cg4002/solution1/main.cpp:135:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'moving_var2' (cg4002/solution1/main.cpp:139:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'beta2' (cg4002/solution1/main.cpp:143:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'gamma2' (cg4002/solution1/main.cpp:147:3)
+INFO: [HLS 200-472] Inferring partial write operation for 'inputs' (cg4002/solution1/main.cpp:160:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:165:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:169:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden1' (cg4002/solution1/main.cpp:173:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:178:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:182:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'hidden2' (cg4002/solution1/main.cpp:186:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:191:4)
+INFO: [HLS 200-472] Inferring partial write operation for 'outputs' (cg4002/solution1/main.cpp:194:4)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:05:43 ; elapsed = 00:05:44 . Memory (MB): peak = 1632.113 ; gain = 1227.754 ; free physical = 7427 ; free virtual = 9966
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'MLP_1' ...
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.2' to 'dot_product_2'.
+WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 349.45 seconds; current allocated memory: 279.818 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 9.5 seconds; current allocated memory: 298.698 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 10.62 seconds; current allocated memory: 310.258 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 8.11 seconds; current allocated memory: 329.092 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 5.88 seconds; current allocated memory: 333.913 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.81 seconds; current allocated memory: 349.706 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.8 seconds; current allocated memory: 351.476 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.64 seconds; current allocated memory: 353.652 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fadd_32ns_32ns_32_4_full_dsp_1' to 'MLP_1_fadd_32ns_3bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'MLP_1_fmul_32ns_32ns_32_3_max_dsp_1' to 'MLP_1_fmul_32ns_3cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_2'.
+INFO: [HLS 200-111]  Elapsed time: 1.97 seconds; current allocated memory: 374.077 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product_1'.
+INFO: [HLS 200-111]  Elapsed time: 7.18 seconds; current allocated memory: 431.007 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'dot_product' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fadd_32ns_3bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'MLP_1_fmul_32ns_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'dot_product'.
+INFO: [HLS 200-111]  Elapsed time: 5.92 seconds; current allocated memory: 471.537 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'MLP_1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'MLP_1/S_AXIS_V_last' to 'axis' (register, both mode).
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2020.1 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================

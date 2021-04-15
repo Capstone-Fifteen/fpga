@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'dot_product.1' to 'dot_product_1'." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:14.183+0800" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'dot_product.2' to 'dot_product_2'." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:14.059+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'dot_product&lt;float, 256>' to 'dot_product.2' (cg4002/solution1/main.cpp:30:2)" projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:10.315+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'dot_product&lt;float, 256>.1' to 'dot_product.1' (cg4002/solution1/main.cpp:30:2)" projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:07.445+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'dot_product&lt;float, 64>' to 'dot_product' (cg4002/solution1/main.cpp:30:2)" projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:07.443+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:02.493+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:02.467+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:02.440+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:02.414+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'b_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:36:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:02.388+0800" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-104] Completely partitioning array 'a_int' (cg4002/solution1/main.cpp:25) accessed through non-constant indices on dimension 1 (cg4002/solution1/main.cpp:32:2), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:26:02.385+0800" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'MLP_1_ap_fmul_1_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:29:01.137+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'MLP_1_ap_faddfsub_2_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:29:00.180+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'MLP_1_ap_fadd_2_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues." projectName="cg4002" solutionName="solution1" date="2021-03-29T17:28:59.861+0800" type="Warning"/>
+      </packageLog>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
